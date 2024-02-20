@@ -3,7 +3,7 @@ name: github-action-checkout
 on: push
 
 jobs:
-    second_check:
+    first_check:
       runs-on: ubuntu-latest
       steps:
       - name: initiate a checkout
