@@ -3,8 +3,8 @@ name: github-action-checkout
 on: push
 
 jobs:
-    second-check:
-       runs-on: ubuntu-latest
+    second_check:
+      runs-on: ubuntu-latest
       steps:
       - name: initiate a checkout
         uses: actions/checkout@v4
