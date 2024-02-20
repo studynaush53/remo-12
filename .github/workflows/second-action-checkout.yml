@@ -1,18 +1,17 @@
-name: github-action-checkout
-
+name: git-hub-actions
 on: push
 
 jobs:
-    first_check:
-      runs-on: ubuntu-latest
-      steps:
-      - name: initiate a checkout
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-repo
         uses: actions/checkout@v4
 
-       - name: list all files 
-         run: ls -ltra
+      - name: list files 
+        run: ls -ltra
 
-      - name: cat file 
+      - name: read file
         run: cat README.md
               
             
