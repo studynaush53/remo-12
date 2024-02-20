@@ -3,14 +3,15 @@ on: push
 
 jobs:
     actions-check:
-        steps:
-            - name: initiate a checkout
-              uses: actions/checkout@v4
+       runs-on: ubuntu-latest
+      steps:
+      - name: initiate a checkout
+        uses: actions/checkout@v4
 
-            - name: list all files 
-              run: ls -ltra
+       - name: list all files 
+         run: ls -ltra
 
-            - name: cat file 
-              run: cat README.md
+      - name: cat file 
+        run: cat README.md
               
             
