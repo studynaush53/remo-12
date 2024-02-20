@@ -1,0 +1,16 @@
+name: github-action-checkout
+on: push
+
+jobs:
+    actions-check:
+        steps:
+            - name: initiate a checkout
+              uses: actions/checkout@v4
+
+            - name: list all files 
+              run: ls -ltra
+
+            - name: cat file 
+              run: cat README.md
+              
+            
