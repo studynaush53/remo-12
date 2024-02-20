@@ -1,0 +1,9 @@
+name: remo
+on : push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: welcome page
+        run: echo "helo there"
